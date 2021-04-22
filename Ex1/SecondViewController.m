@@ -26,7 +26,8 @@
 //    _block(3);//1테스트
     [self dismissViewControllerAnimated:YES completion:^{
         NSLog(@"이전 화면으로 돌아가는데 성공");
-        _block(3);//2테스트
+        //_block(3);
+        self.block(3);//2테스트
     }];
 }
 
