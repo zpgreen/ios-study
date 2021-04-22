@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,retain) NSString *messageFromVC;
 @property(nonatomic,readwrite) myBlockType block;
 //@property(nonatomic,readwrite)
+//strong, weak 차이로 weak(=asign)은 힙메모리의 retain 카운터를 안늘림.. --> 현재는 ARC가 해줌
+@property(nonatomic,readwrite) int age; // 값이기때문에 힙메모리가 아님 - 포인터가 아니기에
 
 @end
 

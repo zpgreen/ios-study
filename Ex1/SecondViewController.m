@@ -12,7 +12,7 @@
 @end
 
 @implementation SecondViewController
-@synthesize messageFromVC;
+@synthesize messageFromVC; // 외부에 있는걸 내부에 쓰는걸로 용도로.... _를 쓰면 되기에 굳이...
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -29,6 +29,10 @@
         //_block(3);
         self.block(3);//2테스트
     }];
+    
+    int a = 5;
+    NSNumber *number = [NSNumber numberWithInt:a];
+    
 }
 
 /*
