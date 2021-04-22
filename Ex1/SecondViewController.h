@@ -6,12 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//코드블럭 : 코드를 담는 변수
+typedef void (^myBlockType)(int);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : UIViewController
 
-@property(nonatomic,retain)NSString *messageFromVC;
+@property(nonatomic,retain) NSString *messageFromVC;
+@property(nonatomic,readwrite) myBlockType block;
 //@property(nonatomic,readwrite)
 
 @end

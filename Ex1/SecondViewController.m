@@ -19,8 +19,14 @@
     NSLog(@"received value = %@", messageFromVC);
 }
 - (IBAction)backButtonPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
+//    [self dismissViewControllerAnimated:YES completion:^{
         
+//    }];
+    
+//    _block(3);//1테스트
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"이전 화면으로 돌아가는데 성공");
+        _block(3);//2테스트
     }];
 }
 

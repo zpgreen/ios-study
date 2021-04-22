@@ -34,6 +34,9 @@
     
     secondViewController.messageFromVC =@"ickang";
     
+    secondViewController.block = ^(int a) {
+        NSLog(@"result from VC2 = %d",a);
+    };
     
 }
 - (IBAction)buttonPressed:(id)sender {
