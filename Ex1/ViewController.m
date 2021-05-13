@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import <TestFramework1/MyClass.h>
 @interface ViewController ()
 
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    MyClass *mc = [[MyClass alloc]init];
+    NSLog(@"result = > %d",[mc c]);
 }
 
 - (void)viewWillAppear:(BOOL)animated{
